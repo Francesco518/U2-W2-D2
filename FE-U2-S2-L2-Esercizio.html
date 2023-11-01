@@ -103,7 +103,7 @@ EXTRAS
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-xl">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#top">
           <img
             src="https://www.zarla.com/images/zarla-viaggit-1x1-2400x2400-20210608-hr8qmr3vpxfhk6j8y7pf.png?crop=1:1,smart&width=250&dpr=2"
             alt="Bootstrap"
@@ -124,15 +124,17 @@ EXTRAS
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="top">Home</a>
+              <a class="nav-link active" aria-current="page" href="#top"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sales</a>
+              <a class="nav-link" href="#section-sales">Sales</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown"
-                href="#"
+                href="#section-welcome"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -141,10 +143,10 @@ EXTRAS
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Last Minute</a>
+              <a class="nav-link" href="#section-last">Last Minute</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Reviews</a>
+              <a class="nav-link" href="#section-review">Reviews</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -154,10 +156,7 @@ EXTRAS
               placeholder="Seek magical places"
               aria-label="Search"
             />
-            <button
-              class="btn btn-outline-success text-danger border border-danger"
-              type="submit"
-            >
+            <button class="btn text-danger border border-danger" type="submit">
               Search
             </button>
           </form>
@@ -186,9 +185,28 @@ EXTRAS
       </div>
     </div>
     <div class="container-xl mt-5">
-      <h3>Sales</h3>
+      <h3 id="section-sales">Sales</h3>
       <div class="row">
-        <div class="col-sm-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3 d-flex flex-wrap align-items-stretch">
+          <div class="card p-0 border-3 border-info">
+            <img
+              src="https://www.inspiringtravelscotland.com/wp-content/uploads/2018/08/glenfinnan-viaduct-scotland-hogwarts-express-harry-potter.jpg"
+              alt="locations"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">
+                The Glenfinnan Viaduct is a beautiful railway viaduct on the
+                West Highland Line that any self-respecting Harry Potter fans
+                are guaranteed to recognise.
+              </p>
+              <div>
+                <a href="#" class="btn btn-primary">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 d-flex flex-wrap align-items-stretch">
           <div class="card p-0 border-3 border-info">
             <img
               src="https://www.inspiringtravelscotland.com/wp-content/uploads/2018/08/glenfinnan-viaduct-scotland-hogwarts-express-harry-potter.jpg"
@@ -205,7 +223,7 @@ EXTRAS
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3 d-flex flex-wrap align-items-stretch">
           <div class="card p-0 border-3 border-info">
             <img
               src="https://www.inspiringtravelscotland.com/wp-content/uploads/2018/08/glenfinnan-viaduct-scotland-hogwarts-express-harry-potter.jpg"
@@ -213,7 +231,7 @@ EXTRAS
             />
             <div class="card-body">
               <h5 class="card-title">Title</h5>
-              <p class="card-text text-primary">
+              <p class="card-text">
                 The Glenfinnan Viaduct is a beautiful railway viaduct on the
                 West Highland Line that any self-respecting Harry Potter fans
                 are guaranteed to recognise.
@@ -222,24 +240,7 @@ EXTRAS
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3 mt-2">
-          <div class="card p-0 border-3 border-info">
-            <img
-              src="https://www.inspiringtravelscotland.com/wp-content/uploads/2018/08/glenfinnan-viaduct-scotland-hogwarts-express-harry-potter.jpg"
-              alt="locations"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Title</h5>
-              <p class="card-text text-danger">
-                The Glenfinnan Viaduct is a beautiful railway viaduct on the
-                West Highland Line that any self-respecting Harry Potter fans
-                are guaranteed to recognise.
-              </p>
-              <a href="#" class="btn btn-primary">Book</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3 d-flex flex-wrap align-items-stretch">
           <div class="card p-0 border-3 border-info">
             <img
               src="https://www.inspiringtravelscotland.com/wp-content/uploads/2018/08/glenfinnan-viaduct-scotland-hogwarts-express-harry-potter.jpg"
@@ -248,7 +249,7 @@ EXTRAS
             />
             <div class="card-body">
               <h5 class="card-title">Title</h5>
-              <p class="card-text text-warning">
+              <p class="card-text">
                 The Glenfinnan Viaduct is a beautiful railway viaduct on the
                 West Highland Line that any self-respecting Harry Potter fans
                 are guaranteed to recognise.
@@ -260,7 +261,7 @@ EXTRAS
       </div>
     </div>
     <div class="container-xl mt-5">
-      <h3>Welcome Summer</h3>
+      <h3 id="section-welcome">Welcome Summer</h3>
       <div class="row">
         <div class="col-md-6 col-xl-4 col-xxl-2 mt-2">
           <div class="card p-0 shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -396,7 +397,7 @@ EXTRAS
       </div>
     </div>
     <div class="container-xl mt-5">
-      <h3>Last Minute</h3>
+      <h3 id="section-last">Last Minute</h3>
       <div class="row">
         <div class="col-xl-2">
           <img
@@ -443,7 +444,9 @@ EXTRAS
       </div>
     </div>
     <div class="container-xl mt-5">
-      <h3 class="d-flex justify-content-center">Dicono di noi</h3>
+      <h3 class="d-flex justify-content-center" id="section-review">
+        They say about us
+      </h3>
       <div class="row">
         <div class="col-xl-12 d-flex align-items-center">
           <img
